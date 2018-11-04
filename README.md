@@ -1,5 +1,5 @@
 This fork is a placeholder and will focus on some minor changes to make MPDroid easier to use for me and especially for kids.
-Main change will be sort order by album name. 
+Main change will be sort order by artist+album name. 
 Currently in the process of setting up the environment.
 
 ## MPDroid
