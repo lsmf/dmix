@@ -21,6 +21,7 @@ local.properties
 
 .idea/dictionaries
 .idea/libraries
+.idea/caches
 
 # Local IDEA workspace
 .idea/workspace.xml
