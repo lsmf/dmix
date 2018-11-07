@@ -259,7 +259,9 @@ public class AlbumCache {
         for (final List<String> ai : mAlbumSet) {
             final String album = ai.get(2);
             if (album != null && album.isEmpty()) { // no albumartist
-                mUniqueAlbumSet.add(Arrays.asList(ai.get(0), ai.get(1), ""));
+                if (!ai.get(1).isEmpty()) {
+                    mUniqueAlbumSet.add(Arrays.asList(ai.get(0), ai.get(1), ""));
+                }
             } else { // with albumartist set artist to ""
                 mUniqueAlbumSet.add(Arrays.asList(ai.get(0), "", ai.get(2)));
             }
