@@ -175,6 +175,12 @@
             android:title="@string/sortAlbumsByYear" />
 
         <CheckBoxPreference
+            android:key="sortAlbumsByArtist"
+            android:persistent="true"
+            android:summary="@string/sortAlbumsByArtistDescription"
+            android:title="@string/sortAlbumsByArtist" />
+
+        <CheckBoxPreference
             android:defaultValue="true"
             android:key="showAlbumTrackCount"
             android:persistent="true"

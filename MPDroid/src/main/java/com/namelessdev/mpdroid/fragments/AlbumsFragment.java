@@ -55,6 +55,8 @@ public class AlbumsFragment extends BrowseFragment<Album> {
 
     private static final String ALBUM_YEAR_SORT_KEY = "sortAlbumsByYear";
 
+    private static final String ALBUM_ARTST_SORT_KEY = "sortAlbumsByArtist";
+
     private static final String SHOW_ALBUM_TRACK_COUNT_KEY = "showAlbumTrackCount";
 
     private static final String TAG = "AlbumsFragment";
@@ -106,11 +108,14 @@ public class AlbumsFragment extends BrowseFragment<Album> {
     protected void asyncUpdate() {
         final SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(mApp);
         final boolean sortByYear = settings.getBoolean(ALBUM_YEAR_SORT_KEY, false);
+        final boolean sortByArtist = settings.getBoolean(ALBUM_ARTST_SORT_KEY, false);
 
         try {
             replaceItems(mApp.getMPD().getAlbums(mArtist, sortByYear, mIsCountDisplayed));
 
-            if (sortByYear) {
+            if (sortByArtist) {
+                Collections.sort(mItems, Album.SORT_BY_ARTIST);
+            } else if (sortByYear) {
                 Collections.sort(mItems, Album.SORT_BY_DATE);
             } else {
                 Collections.sort(mItems);

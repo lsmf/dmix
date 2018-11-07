@@ -67,7 +67,7 @@
     <string name="wlanBasedSettingsDescription">Set WLAN based MPD connection settings</string>
     -->
 
-    <string name="app_name">MPDroid</string>
+    <string name="app_name">MPDroid.lsmf</string>
     <string name="artists">Artists</string>
     <string name="genres">Genres</string>
     <string name="playlists">Playlists</string>
@@ -180,6 +180,8 @@
     <string name="useLocalAlbumCacheDescription">Save MPD Database Info Locally</string>
     <string name="sortAlbumsByYear">Album year</string>
     <string name="sortAlbumsByYearDescription">Sort albums by year</string>
+    <string name="sortAlbumsByArtist">Album artist</string>
+    <string name="sortAlbumsByArtistDescription">Sort albums by artist</string>
     <string name="showAlbumTrackCount">Album track count</string>
     <string name="showAlbumTrackCountDescription">Show number of tracks on album</string>
     <string name="enableLocalCover">Download local cover art</string>
